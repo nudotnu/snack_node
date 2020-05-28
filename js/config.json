@@ -1,0 +1,38 @@
+{
+    "version": "2.0",
+    "action": {
+        "actionName": {},
+        "parameters": {}
+    },
+    "event": {
+        "type": {}
+    },
+    "context": {
+        "session": {
+            "accessToken": {}
+        },
+        "device": {
+            "type": {},
+            "state": {}
+        },
+        "supportedInterfaces": {
+            "AudioPlayer": {
+                "playerActivity": {},
+                "token": {},
+                "offsetInMilliseconds": {}
+            }
+        },
+        "privatePlay": {}
+    },
+    "resultCode": "OK",
+    "output": {},
+    "directives": [
+        {
+            "type": "AudioPlayer.Play",
+            "audioItem": {
+                "stream": {},
+                "metadata": {}
+            }
+        }
+    ]
+}
