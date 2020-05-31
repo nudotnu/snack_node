@@ -45,7 +45,9 @@ app.use('/snack', (req, res) => {
     }
 
     function num1_function() {
-        checktime();
+        if (checktime() == false) {
+            return
+        }
         //1번 간식 줘
         output = {
             "prompt" : "1번 간식 실행"
@@ -54,7 +56,9 @@ app.use('/snack', (req, res) => {
     }
 
     function num2_function() {
-        checktime();
+        if (checktime() == false) {
+            return
+        }
         //2번 간식 줘
         output = {
             "prompt" : "2번 간식 실행"
@@ -63,7 +67,9 @@ app.use('/snack', (req, res) => {
     }
 
     function random_function() {
-        checktime();
+        if (checktime() == false) {
+            return
+        }
         //랜덤 간식 줘
         output = {
             "prompt" : "랜덤 간식 실행"
@@ -71,8 +77,19 @@ app.use('/snack', (req, res) => {
         nugu.output = output
     }
 
+    let last
     function checktime() {
-        
+        let now = new Date()
+        if (last == null) {
+            last = now
+            return true
+        }
+        else if ((now.getTime - last.getTime) / 1000 / 60 / 60 >= 5) {
+            return true
+        }
+        else {
+            return false
+        }
     }
 
     // Intent가 오는 부분, actionName으로 구분합니다.
