@@ -50,7 +50,7 @@ app.use('/snack', (req, res) => {
         }
         //1번 간식 줘
         output = {
-            "prompt" : "1번 간식 실행"
+            "prompt" : "1번 간식을 드릴게요"
         }
         nugu.output = output
     }
@@ -61,7 +61,7 @@ app.use('/snack', (req, res) => {
         }
         //2번 간식 줘
         output = {
-            "prompt" : "2번 간식 실행"
+            "prompt" : "2번 간식을 드릴게요"
         }
         nugu.output = output
     }
@@ -72,7 +72,7 @@ app.use('/snack', (req, res) => {
         }
         //랜덤 간식 줘
         output = {
-            "prompt" : "랜덤 간식 실행"
+            "prompt" : "랜덤 간식을 드릴게요"
         }
         nugu.output = output
     }
