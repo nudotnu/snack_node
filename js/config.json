@@ -1,38 +1,19 @@
 {
-    "version": "2.0",
-    "action": {
-        "actionName": {},
-        "parameters": {}
-    },
-    "event": {
-        "type": {}
-    },
-    "context": {
-        "session": {
-            "accessToken": {}
+    "response":{
+        "version": "2.0",
+        "resultCode": "OK",
+        "output": {
+        
         },
-        "device": {
-            "type": {},
-            "state": {}
-        },
-        "supportedInterfaces": {
-            "AudioPlayer": {
-                "playerActivity": {},
-                "token": {},
-                "offsetInMilliseconds": {}
-            }
-        },
-        "privatePlay": {}
-    },
-    "resultCode": "OK",
-    "output": {},
-    "directives": [
+        "directives": [
         {
             "type": "AudioPlayer.Play",
-            "audioItem": {
-                "stream": {},
-                "metadata": {}
+            "audioItem": {     
+                "stream": {
+                },
+                "metadata": { }
             }
         }
-    ]
+        ]
+    }
 }
