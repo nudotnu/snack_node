@@ -24,7 +24,7 @@ app.use('/snack', (req, res) => {
     const ACTION_RANDOM = 'random';
 
     function CalorieInfo_function() {
-        const cal = nugu.action.parameters['calorie'].value
+        const cal = nugu.action.parameters['SNACK'].value
         console.log(cal)
         let output = nugu.output
 
