@@ -1,11 +1,14 @@
 {
-    "response":{
-        "version": "2.0",
-        "resultCode": "OK",
-        "output": {
+    "version": "2.0",
+    "action": {
+        "actionName": {},
+        "parameters": {}
+    },
+    "resultCode": "OK",
+    "output": {
         
-        },
-        "directives": [
+    },
+    "directives": [
         {
             "type": "AudioPlayer.Play",
             "audioItem": {     
@@ -14,6 +17,5 @@
                 "metadata": { }
             }
         }
-        ]
-    }
+    ]
 }
