@@ -99,9 +99,6 @@ app.use('/snack', (req, res) => {
         case ACTION_CALORIEINFO:
             return CalorieInfo_function()
             break;
-        case ACTION_DDINGEON:
-            return Ddingeon_function()
-            break;
         case ACTION_NUM1:
             return num1_function()
             break;
