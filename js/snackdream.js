@@ -16,6 +16,7 @@ app.use('/snack', (req, res) => {
         } //파라메터 부분, {} 이 오는 경우를 방지해야 합니다.
     }
     const actionName = requestBody.action.actionName; // action의 이름
+    console.log(actionName)
 
     const ACTION_CALORIEINFO = 'CalorieInfo';
     const ACTION_NUM1 = 'num1';
